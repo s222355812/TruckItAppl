@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TruckItAppl"
+        tools:targetApi="31"
+        android:enableOnBackInvokedCallback="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDepJ3TdHeg_ehtAY60hr_AnpQVGQX7FaY" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"/>
+        <activity
+            android:name=".HomeActivity"/>
+        <activity
+            android:name=".MyOrdersActivity"/>
+        <activity
+            android:name=".OrderDetailsActivity"/>
+        <activity
+            android:name=".AddDeliveryActivity"/>
+        <activity
+            android:name=".EstimateActivity"/>
+        <activity
+            android:name=".PaymentsActivity"/>
+        <!-- PayPal configuration -->
+        <meta-data
+            android:name="com.paypal.android.sdk.clientID"
+            android:value="AVW7n2JFabukBuCAWw5BYntwp5iTjRePT2Xg3ALBGPjgyXK4KErX12JTj0bvqlLx0C7oB6iP6gyM0ogL" />
+        <meta-data
+            android:name="com.paypal.android.sdk.secretID"
+            android:value="ENErylAWJLGkJtKiK6DV_Yb36RBwpIxNnAsMwqo9zHVOywC9Q4EIlyNUaW1wCzG2yOxj71ZHEYC-8WVM" />
+    </application>
+
+</manifest>

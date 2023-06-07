@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimated Fare: $50"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTravelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Time: 30 mins"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewFare"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickup Location"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewTravelTime"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPickup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewPickup"
+        android:hint="Enter pickup location"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewDropOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drop-off Location"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextPickup"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDropOff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewDropOff"
+        android:hint="Enter drop-off location"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Map"
+        android:layout_below="@id/editTextDropOff"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonBookNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:layout_below="@id/buttonMap"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCallDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Driver"
+        android:layout_below="@id/buttonBookNow" />
+
+</RelativeLayout>

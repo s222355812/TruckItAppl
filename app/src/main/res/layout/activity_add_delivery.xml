@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Receiver's Name" />
+
+        <EditText
+            android:id="@+id/editTextReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Receiver Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Pickup Date" />
+
+        <DatePicker
+            android:id="@+id/datePickerPickupDate"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Location" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Location" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Goods Type" />
+
+        <Spinner
+            android:id="@+id/spinnerGoodsType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:contentDescription="Spinner Goods Type" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Vehicle Type" />
+
+        <Spinner
+            android:id="@+id/spinnerVehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:contentDescription="Spinner Vehicle Type" />
+
+        <Button
+            android:id="@+id/buttonCreateDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create Delivery" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewTruck"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/truck1" />
+
+    <TextView
+        android:id="@+id/textViewPickupDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewTruck"
+        android:layout_marginTop="16dp"
+        android:text="Pickup Details"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewGoodsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPickupDetails"
+        android:layout_marginTop="8dp"
+        android:text="Goods Description"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonEstimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGoodsDescription"
+        android:layout_marginTop="16dp"
+        android:text="Estimate"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
